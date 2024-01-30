@@ -6,7 +6,7 @@
     <link rel="icon" href="user-regular.svg">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>  Profile</title>
+    <title>Profile</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,6 +15,48 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&family=Saira:wght@800&display=swap"
         rel="stylesheet">
+<style>
+  section div img {
+    animation: rotate 2s ease-in-out; /* Removed "infinite" */
+  }
+
+  @keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  h2 {
+    animation: glow 1s ease-in-out infinite; /* Glow animation remains infinite */
+  }
+
+  @keyframes glow {
+    from { text-shadow: 0 0 2px white, 0 1px 4px rgba(255, 255, 255, 0.5); }
+    to { text-shadow: 0 0 4px white, 0 2px 8px rgba(255, 255, 255, 0.5); }
+  }
+</style>
+
+
+<style>
+  body > img {
+    animation: fade-in 1s ease-in-out;
+  }
+
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+</style>
+<style>
+  section {
+    animation: slide-in 1s ease-in-out;
+  }
+
+  @keyframes slide-in {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+  }
+</style>
+
 
     <style>
         * {
